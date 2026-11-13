@@ -1,0 +1,91 @@
+{
+  "id": "doom",
+  "version": "1.0.0",
+  "protocol": 1,
+  "kit": ">=1 <2",
+  "windows": [
+    {
+      "window": "doom",
+      "app": "doom",
+      "entry": "index.html",
+      "titleKey": "doom_title",
+      "windowClass": "doom-window openttd-window",
+      "paneClass": "doom-pane openttd-pane",
+      "frameClass": "doom-frame",
+      "statusClass": "doom-details-bar openttd-details-bar",
+      "allow": "fullscreen; gamepad",
+      "phone": 2,
+      "size": {
+        "width": "960px",
+        "height": "640px"
+      },
+      "status": {
+        "loading": "doom_status_loading",
+        "failed": "doom_status_timeout"
+      },
+      "capabilities": [
+        "state",
+        "snapshot",
+        "wake"
+      ],
+      "menus": [
+        {
+          "id": "file",
+          "labelKey": "menu_file",
+          "items": [
+            {
+              "type": "item",
+              "action": "close-active-window",
+              "labelKey": "close",
+              "shortcutId": "close-window",
+              "conditionId": "close-active-window"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "intents": [],
+  "strings": {
+    "en": {
+      "app_desc_doom": "Run the DOOM engine with an IWAD you own; the chosen file stays local.",
+      "doom_label": "DOOM",
+      "doom_retry": "Retry engine",
+      "doom_status_crashed": "The engine could not start.",
+      "doom_status_engine_ready": "Engine ready",
+      "doom_status_import_failed": "The local WAD could not be imported.",
+      "doom_status_importing": "Importing local WAD…",
+      "doom_status_loading": "Loading the engine…",
+      "doom_status_missing_binary": "DOOM Wasm is not in this build. Rebuild with the build/ recipe beside this tree — this desk never downloads engines.",
+      "doom_status_needs_data": "Engine ready · Local WAD required",
+      "doom_status_paused": "Paused",
+      "doom_status_ready": "Local WAD ready · Press Play",
+      "doom_status_running": "Running · Local browser session",
+      "doom_status_save_failed": "Browser storage could not be synced.",
+      "doom_status_starting": "Starting DOOM…",
+      "doom_status_storage_synced": "Browser storage synced",
+      "doom_status_timeout": "The engine took too long to respond.",
+      "doom_title": "DOOM"
+    },
+    "zh": {
+      "app_desc_doom": "使用你拥有的 IWAD 运行 DOOM 引擎；所选文件留在本机。",
+      "doom_label": "DOOM",
+      "doom_retry": "重试引擎",
+      "doom_status_crashed": "引擎未能启动。",
+      "doom_status_engine_ready": "引擎已就绪",
+      "doom_status_import_failed": "无法导入这个本机 WAD。",
+      "doom_status_importing": "正在导入本机 WAD……",
+      "doom_status_loading": "正在装载引擎……",
+      "doom_status_missing_binary": "此构建未包含 DOOM Wasm。请用本目录旁 build/ 里的配方重建——本桌面从不下载引擎。",
+      "doom_status_needs_data": "引擎已就绪 · 需要本机 WAD",
+      "doom_status_paused": "已暂停",
+      "doom_status_ready": "本机 WAD 已就绪 · 点按「开始」",
+      "doom_status_running": "正在运行 · 本机浏览器会话",
+      "doom_status_save_failed": "无法同步浏览器存储。",
+      "doom_status_starting": "正在启动 DOOM……",
+      "doom_status_storage_synced": "浏览器存储已同步",
+      "doom_status_timeout": "引擎响应超时。",
+      "doom_title": "DOOM"
+    }
+  }
+}

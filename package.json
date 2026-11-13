@@ -1,0 +1,10 @@
+{
+  "name": "chocolate-doom-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chocolate Doom 3.1.1 in a browser page (WebAssembly). No WAD is shipped.",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "start": "python3 -m http.server 8080"
+  }
+}
