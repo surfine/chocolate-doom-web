@@ -2,6 +2,12 @@
 
 A browser page that runs [Chocolate Doom](https://github.com/chocolate-doom/chocolate-doom) 3.1.1 as WebAssembly (`SOURCE.txt`; `index.html` shows “Chocolate Doom 3.1.1 · WebAssembly”).
 
+## Screenshots
+
+Captured running inside the AI System 6 desk: Classic on the left, Liquid Glass on the right.
+
+<p><img src="screenshots/doom-classic.png" width="49%" alt="DOOM · Classic"> <img src="screenshots/doom-liquid-glass.png" width="49%" alt="DOOM · Liquid Glass"></p>
+
 No DOOM, DOOM II, TNT, Plutonia, Freedoom, or other WAD is included or downloaded (`SOURCE.txt`). You choose a local IWAD through the page’s file picker. A selected IWAD stays in the page’s own browser storage (`SOURCE.txt`).
 
 Saves, configuration, and imported WAD copies live in the engine’s IDBFS under `/doom/iwads`, `/doom/saves`, and `/doom/config` (`build/build.md`; `shell.js` mounts IDBFS at `/doom`).

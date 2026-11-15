@@ -2,6 +2,12 @@
 
 在浏览器页面里运行 [Chocolate Doom](https://github.com/chocolate-doom/chocolate-doom) 3.1.1 的 WebAssembly 构建（见 `SOURCE.txt`；`index.html` 写明「Chocolate Doom 3.1.1 · WebAssembly」）。
 
+## 截图
+
+在 AI System 6 桌面里实际运行时截取，左为 Classic，右为 Liquid Glass。
+
+<p><img src="screenshots/doom-classic.png" width="49%" alt="DOOM · Classic"> <img src="screenshots/doom-liquid-glass.png" width="49%" alt="DOOM · Liquid Glass"></p>
+
 不包含、也不下载 DOOM、DOOM II、TNT、Plutonia、Freedoom 或其它任何 WAD（`SOURCE.txt`）。你通过页面的文件选择器提供本机 IWAD。所选 IWAD 留在页面自己的浏览器存储里（`SOURCE.txt`）。
 
 存档、配置与已导入的 WAD 副本保存在引擎的 IDBFS，路径为 `/doom/iwads`、`/doom/saves`、`/doom/config`（`build/build.md`；`shell.js` 把 IDBFS 挂在 `/doom`）。
